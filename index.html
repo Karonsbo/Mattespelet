@@ -1,6 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Mattespelet fungerar 🎉</h1>
-  </body>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>TP-spelet</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<div class="container text-center mt-5">
+  <h1 class="mb-4">TP-spelet 🎲</h1>
+  <p>Välj en kategori genom att skanna QR-koden eller klicka på knappen:</p>
+  
+  <div class="d-flex justify-content-center flex-wrap gap-3">
+    <a href="card.html?category=math" class="btn btn-primary btn-lg">Matte</a>
+    <a href="card.html?category=history" class="btn btn-warning btn-lg">Historia</a>
+    <a href="card.html?category=science" class="btn btn-success btn-lg">Vetenskap</a>
+    <!-- Du kan lägga till fler kategorier här -->
+  </div>
+</div>
+
+</body>
 </html>
