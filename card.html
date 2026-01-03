@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>Kort – TP-spelet</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>TP-spelet – Kort</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
+<body class="bg-dark text-white">
 
-<div class="container text-center mt-5">
-  <div id="card" class="card p-5 mx-auto shadow" style="max-width: 400px;">
-    <h2 id="question" class="mb-4">Laddar...</h2>
-    <button onclick="nextCard()" class="btn btn-primary btn-lg">Nästa kort</button>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="card-container" onclick="flipCard()">
+    <div class="card">
+      <div class="front" id="cardFront">Laddar...</div>
+      <div class="back" id="cardBack">Facit</div>
+    </div>
   </div>
 </div>
 
