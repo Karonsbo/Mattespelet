@@ -1,0 +1,12 @@
+{
+  "math": [
+    { "q": "4 + 5 = ?", "level": 1 },
+    { "q": "23 + 17 = ?", "level": 2 }
+  ],
+  "history": [
+    { "q": "Vem var Sveriges kung år 1600?", "level": 1 }
+  ],
+  "science": [
+    { "q": "Vad heter vår planet?", "level": 1 }
+  ]
+}
