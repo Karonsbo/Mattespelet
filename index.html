@@ -14,9 +14,7 @@
   <p>Välj kategori:</p>
 
   <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
-    <!-- Matte är aktiv -->
     <button class="btn btn-primary btn-lg" onclick="selectCategory('math')">Matte</button>
-    <!-- Andra kategorier inaktiva / grå -->
     <button class="btn btn-secondary btn-lg" disabled>Historia</button>
     <button class="btn btn-secondary btn-lg" disabled>Biologi</button>
     <button class="btn btn-secondary btn-lg" disabled>Vetenskap</button>
@@ -25,35 +23,28 @@
   <!-- Nivåval, dold tills kategori väljs -->
   <div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
     <p class="w-100">Välj nivå:</p>
-    <a id="level1" class="btn btn-outline-primary btn-lg" href="#">Lätt</a>
-    <a id="level2" class="btn btn-outline-warning btn-lg" href="#">Medel</a>
-    <a id="level3" class="btn btn-outline-danger btn-lg" href="#">Svår</a>
+    <button id="level1" class="btn btn-outline-primary btn-lg">Lätt</button>
+    <button id="level2" class="btn btn-outline-warning btn-lg">Medel</button>
+    <button id="level3" class="btn btn-outline-danger btn-lg">Svår</button>
   </div>
 </div>
 
 <script>
 let selectedCategory = null;
 
-// När kategori väljs
 function selectCategory(cat) {
   selectedCategory = cat;
   const levelDiv = document.getElementById('levelSelect');
   levelDiv.style.display = 'flex';
 
-  // Uppdatera länkar för nivåval
   for (let lvl = 1; lvl <= 3; lvl++) {
     const lvlBtn = document.getElementById('level' + lvl);
-    lvlBtn.href = `card.html?category=${cat}&level=${lvl}`;
-    
-    // Lägg till säker click
-    lvlBtn.onclick = function(e){
-      // säkerställer att länken fungerar normalt
-      window.location.href = lvlBtn.href;
-    };
+    lvlBtn.onclick = () => {
+      window.location.href = `card.html?category=${cat}&level=${lvl}`;
+    }
   }
 }
 </script>
-
 
 </body>
 </html>
