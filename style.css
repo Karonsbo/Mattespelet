@@ -67,6 +67,12 @@ body {
 .klockan        { background:#99e699; }
 .kreativ        { background:#ffb366; }
 
+.slice.active {
+  outline: 4px solid white;
+  box-shadow: 0 0 12px rgba(255,255,255,0.8);
+}
+
+
 
 @media (min-width: 900px) {
   .card-container {
