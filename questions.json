@@ -1,12 +1,27 @@
 {
   "math": [
-    { "q": "4 + 5 = ?", "level": 1 },
-    { "q": "23 + 17 = ?", "level": 2 }
-  ],
-  "history": [
-    { "q": "Vem var Sveriges kung år 1600?", "level": 1 }
-  ],
-  "science": [
-    { "q": "Vad heter vår planet?", "level": 1 }
+    {"q": "4 + 5 = ?", "answer": "9", "color": "blue", "level": 1},
+    {"q": "23 + 17 = ?", "answer": "40", "color": "blue", "level": 2},
+    {"q": "145 + 276 = ?", "answer": "421", "color": "blue", "level": 3},
+
+    {"q": "15 − 7 = ?", "answer": "8", "color": "pink", "level": 1},
+    {"q": "50 − 23 = ?", "answer": "27", "color": "pink", "level": 2},
+    {"q": "256 − 178 = ?", "answer": "78", "color": "pink", "level": 3},
+
+    {"q": "6 × 7 = ?", "answer": "42", "color": "yellow", "level": 1},
+    {"q": "12 × 8 = ?", "answer": "96", "color": "yellow", "level": 2},
+    {"q": "25 × 16 = ?", "answer": "400", "color": "yellow", "level": 3},
+
+    {"q": "24 ÷ 4 = ?", "answer": "6", "color": "purple", "level": 1},
+    {"q": "81 ÷ 9 = ?", "answer": "9", "color": "purple", "level": 2},
+    {"q": "144 ÷ 12 = ?", "answer": "12", "color": "purple", "level": 3},
+
+    {"q": "Visa 08:15 på klockan", "answer": "Kvart över åtta", "color": "green", "level": 1},
+    {"q": "Visa 15:45 på klockan", "answer": "Kvart i fyra", "color": "green", "level": 2},
+    {"q": "Visa 22:10 på klockan", "answer": "Tio över tio", "color": "green", "level": 3},
+
+    {"q": "Hoppa 5 gånger och räkna högt", "answer": "5 hopp", "color": "orange", "level": 1},
+    {"q": "Rita en triangel med 3 olika färger", "answer": "Triangel färdig", "color": "orange", "level": 2},
+    {"q": "Bygg en liten matte-figur med 4 olika steg", "answer": "Figur klar", "color": "orange", "level": 3}
   ]
 }
