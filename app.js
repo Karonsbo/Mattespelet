@@ -1,14 +1,16 @@
+// Hämta kategori och nivå från URL
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category") || "math";
-const level = parseInt(params.get("level")) || 1; // default = nivå 1
+const level = parseInt(params.get("level")) || 1;
 
 let questions = [];
 let currentQuestion = null;
 
+// Ladda frågor
 fetch("questions.json")
   .then(res => res.json())
   .then(data => {
-    // filtrera frågor på vald nivå
+    // filtrera på kategori + nivå
     questions = data[category].filter(q => q.level === level);
     nextCard();
   });
@@ -28,6 +30,7 @@ function nextCard() {
   document.getElementById('cardFront').innerText = currentQuestion.q;
   document.getElementById('cardBack').innerText = currentQuestion.answer || "Facit saknas";
 
+  // Färg per subkategori
   const colorMap = {
     blue: "#4da6ff",
     pink: "#ff99cc",
