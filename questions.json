@@ -1,27 +1,119 @@
 {
   "math": [
-    {"q": "4 + 5 = ?", "answer": "9", "color": "blue", "level": 1},
-    {"q": "23 + 17 = ?", "answer": "40", "color": "blue", "level": 2},
-    {"q": "145 + 276 = ?", "answer": "421", "color": "blue", "level": 3},
 
-    {"q": "15 − 7 = ?", "answer": "8", "color": "pink", "level": 1},
-    {"q": "50 − 23 = ?", "answer": "27", "color": "pink", "level": 2},
-    {"q": "256 − 178 = ?", "answer": "78", "color": "pink", "level": 3},
+    /* =====================
+       NIVÅ 1 – LÄTT
+       ===================== */
 
-    {"q": "6 × 7 = ?", "answer": "42", "color": "yellow", "level": 1},
-    {"q": "12 × 8 = ?", "answer": "96", "color": "yellow", "level": 2},
-    {"q": "25 × 16 = ?", "answer": "400", "color": "yellow", "level": 3},
+    {
+      "level": 1,
+      "addition":       { "q": "4 + 5 = ?", "a": "9" },
+      "subtraktion":    { "q": "12 − 7 = ?", "a": "5" },
+      "multiplikation": { "q": "5 × 6 = ?", "a": "30" },
+      "division":       { "q": "20 ÷ 4 = ?", "a": "5" },
+      "klockan":        { "q": "Visa 08:30", "a": "Halv nio" },
+      "kreativ":        { "q": "Hoppa 5 gånger och räkna högt", "a": "5 hopp" }
+    },
+    {
+      "level": 1,
+      "addition":       { "q": "7 + 8 = ?", "a": "15" },
+      "subtraktion":    { "q": "15 − 6 = ?", "a": "9" },
+      "multiplikation": { "q": "4 × 7 = ?", "a": "28" },
+      "division":       { "q": "18 ÷ 3 = ?", "a": "6" },
+      "klockan":        { "q": "Visa 09:15", "a": "Kvart över nio" },
+      "kreativ":        { "q": "Rita en cirkel", "a": "Cirkel ritad" }
+    },
+    {
+      "level": 1,
+      "addition":       { "q": "9 + 6 = ?", "a": "15" },
+      "subtraktion":    { "q": "20 − 8 = ?", "a": "12" },
+      "multiplikation": { "q": "3 × 9 = ?", "a": "27" },
+      "division":       { "q": "16 ÷ 2 = ?", "a": "8" },
+      "klockan":        { "q": "Visa 14:00", "a": "Klockan två" },
+      "kreativ":        { "q": "Klappa händerna 6 gånger", "a": "6 klapp" }
+    },
+    {
+      "level": 1,
+      "addition":       { "q": "6 + 7 = ?", "a": "13" },
+      "subtraktion":    { "q": "14 − 5 = ?", "a": "9" },
+      "multiplikation": { "q": "2 × 8 = ?", "a": "16" },
+      "division":       { "q": "12 ÷ 3 = ?", "a": "4" },
+      "klockan":        { "q": "Visa 10:45", "a": "Kvart i elva" },
+      "kreativ":        { "q": "Gå runt bordet ett varv", "a": "Varv gått" }
+    },
 
-    {"q": "24 ÷ 4 = ?", "answer": "6", "color": "purple", "level": 1},
-    {"q": "81 ÷ 9 = ?", "answer": "9", "color": "purple", "level": 2},
-    {"q": "144 ÷ 12 = ?", "answer": "12", "color": "purple", "level": 3},
+    /* =====================
+       NIVÅ 2 – MEDEL
+       ===================== */
 
-    {"q": "Visa 08:15 på klockan", "answer": "Kvart över åtta", "color": "green", "level": 1},
-    {"q": "Visa 15:45 på klockan", "answer": "Kvart i fyra", "color": "green", "level": 2},
-    {"q": "Visa 22:10 på klockan", "answer": "Tio över tio", "color": "green", "level": 3},
+    {
+      "level": 2,
+      "addition":       { "q": "27 + 18 = ?", "a": "45" },
+      "subtraktion":    { "q": "50 − 26 = ?", "a": "24" },
+      "multiplikation": { "q": "8 × 9 = ?", "a": "72" },
+      "division":       { "q": "81 ÷ 9 = ?", "a": "9" },
+      "klockan":        { "q": "Visa 15:45", "a": "Kvart i fyra" },
+      "kreativ":        { "q": "Ställ dig upp och sätt dig ner 3 gånger", "a": "3 gånger" }
+    },
+    {
+      "level": 2,
+      "addition":       { "q": "46 + 29 = ?", "a": "75" },
+      "subtraktion":    { "q": "100 − 38 = ?", "a": "62" },
+      "multiplikation": { "q": "7 × 8 = ?", "a": "56" },
+      "division":       { "q": "56 ÷ 7 = ?", "a": "8" },
+      "klockan":        { "q": "Visa 11:20", "a": "Tjugo över elva" },
+      "kreativ":        { "q": "Rita en triangel och en fyrkant", "a": "Figurer ritade" }
+    },
+    {
+      "level": 2,
+      "addition":       { "q": "68 + 17 = ?", "a": "85" },
+      "subtraktion":    { "q": "90 − 47 = ?", "a": "43" },
+      "multiplikation": { "q": "6 × 12 = ?", "a": "72" },
+      "division":       { "q": "72 ÷ 8 = ?", "a": "9" },
+      "klockan":        { "q": "Visa 13:35", "a": "Fem över halv två" },
+      "kreativ":        { "q": "Förklara hur du vet att 6 × 6 = 36", "a": "Upprepad addition / tabell" }
+    },
+    {
+      "level": 2,
+      "addition":       { "q": "134 + 56 = ?", "a": "190" },
+      "subtraktion":    { "q": "200 − 89 = ?", "a": "111" },
+      "multiplikation": { "q": "9 × 7 = ?", "a": "63" },
+      "division":       { "q": "63 ÷ 9 = ?", "a": "7" },
+      "klockan":        { "q": "Visa 18:10", "a": "Tio över sex" },
+      "kreativ":        { "q": "Räkna baklänges från 20 till 0", "a": "Baklänges räknat" }
+    },
 
-    {"q": "Hoppa 5 gånger och räkna högt", "answer": "5 hopp", "color": "orange", "level": 1},
-    {"q": "Rita en triangel med 3 olika färger", "answer": "Triangel färdig", "color": "orange", "level": 2},
-    {"q": "Bygg en liten matte-figur med 4 olika steg", "answer": "Figur klar", "color": "orange", "level": 3}
+    /* =====================
+       NIVÅ 3 – SVÅR
+       ===================== */
+
+    {
+      "level": 3,
+      "addition":       { "q": "245 + 378 = ?", "a": "623" },
+      "subtraktion":    { "q": "500 − 276 = ?", "a": "224" },
+      "multiplikation": { "q": "25 × 16 = ?", "a": "400" },
+      "division":       { "q": "144 ÷ 12 = ?", "a": "12" },
+      "klockan":        { "q": "Visa 22:10", "a": "Tio över tio" },
+      "kreativ":        { "q": "Förklara hur du löser 24 ÷ 6", "a": "Delar upp i lika delar" }
+    },
+    {
+      "level": 3,
+      "addition":       { "q": "389 + 417 = ?", "a": "806" },
+      "subtraktion":    { "q": "1000 − 458 = ?", "a": "542" },
+      "multiplikation": { "q": "18 × 14 = ?", "a": "252" },
+      "division":       { "q": "360 ÷ 12 = ?", "a": "30" },
+      "klockan":        { "q": "Visa 06:55", "a": "Fem i sju" },
+      "kreativ":        { "q": "Hitta på en egen multiplikationsfråga", "a": "Egen fråga skapad" }
+    },
+    {
+      "level": 3,
+      "addition":       { "q": "672 + 489 = ?", "a": "1161" },
+      "subtraktion":    { "q": "900 − 367 = ?", "a": "533" },
+      "multiplikation": { "q": "32 × 15 = ?", "a": "480" },
+      "division":       { "q": "420 ÷ 14 = ?", "a": "30" },
+      "klockan":        { "q": "Visa 19:40", "a": "Tjugo i åtta" },
+      "kreativ":        { "q": "Beskriv ett tal som är större än 100 men mindre än 150", "a": "Exempelvis 123" }
+    }
+
   ]
 }
