@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="UTF-8">
-<title>TP-spelet – Kort</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP-spelet - Kort</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-white">
+<body>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
-  <div class="card-container" onclick="flipCard()">
-    <div class="card">
-      <div class="front" id="cardFront">Laddar...</div>
-      <div class="back" id="cardBack">Facit</div>
+<div class="card-container">
+  <div class="card" onclick="flipCard()">
+    <div class="front">
+      <div class="pie">
+        <div class="slice addition"></div>
+        <div class="slice subtraktion"></div>
+        <div class="slice multiplikation"></div>
+        <div class="slice division"></div>
+        <div class="slice klockan"></div>
+        <div class="slice kreativ"></div>
+      </div>
+      <div class="question" id="questionText">Laddar fråga...</div>
+    </div>
+    <div class="back" id="answerText">
+      Facit
     </div>
   </div>
+
+  <button class="btn btn-light btn-lg next-card" onclick="nextCard()">Nästa kort</button>
 </div>
 
-<div class="container text-center mt-3">
-  <button class="btn btn-light btn-lg" onclick="nextCard()">Nästa kort</button>
-</div>
+<script src="ecard.js"></script>
+<script>
+  // optional: sätt initialt activeType här, t.ex. från tärning
+  // window.setType("addition");
+</script>
 
-<script src="app.js"></script>
 </body>
 </html>
