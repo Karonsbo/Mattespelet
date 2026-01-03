@@ -1,0 +1,12 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.card {
+  border-radius: 20px;
+  font-size: 28px;
+}
+
+button {
+  font-size: 24px;
+}
