@@ -1,44 +1,61 @@
-// Hämta kategori och nivå från URL
+// === PARAMETRAR ===
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category") || "math";
 const level = parseInt(params.get("level")) || 1;
 
-let questions = [];
-let currentQuestion = null;
+// AKTIVT RÄKNESÄTT (styrt av fysisk tärning)
+let activeType = "addition"; 
 
-// Ladda frågor
+let deck = [];
+let currentCard = null;
+
+// === LADDA FRÅGOR ===
 fetch("questions.json")
   .then(res => res.json())
   .then(data => {
-    // filtrera på kategori + nivå
-    questions = data[category].filter(q => q.level === level);
+    deck = data[category].filter(card => card.level === level);
     nextCard();
   });
 
-// Flip kort
-function flipCard() {
-  const card = document.querySelector('.card');
-  card.classList.toggle('flipped');
-}
-
-// Visa nästa kort
+// === NÄSTA KORT ===
 function nextCard() {
-  const card = document.querySelector('.card');
-  card.classList.remove('flipped');
+  const cardEl = document.querySelector(".card");
+  cardEl.classList.remove("flipped");
 
-  currentQuestion = questions[Math.floor(Math.random() * questions.length)];
-  document.getElementById('cardFront').innerText = currentQuestion.q;
-  document.getElementById('cardBack').innerText = currentQuestion.answer || "Facit saknas";
-
-  // Färg per subkategori
-  const colorMap = {
-    blue: "#4da6ff",
-    pink: "#ff99cc",
-    yellow: "#ffe066",
-    purple: "#c299ff",
-    green: "#99e699",
-    orange: "#ffb366",
-    default: "#888"
-  };
-  document.getElementById('cardFront').style.background = colorMap[currentQuestion.color] || colorMap.default;
+  currentCard = deck[Math.floor(Math.random() * deck.length)];
+  showQuestion();
 }
+
+// === VISA FRÅGA ===
+function showQuestion() {
+  const q = currentCard[activeType];
+
+  document.getElementById("questionText").innerText = q.q;
+  document.getElementById("answerText").innerText = q.a;
+
+  setActiveSlice(activeType);
+}
+
+// === FLIP ===
+function flipCard() {
+  document.querySelector(".card").classList.toggle("flipped");
+}
+
+// === VISUELL MARKERING AV TÄRNINGENS VAL ===
+function setActiveSlice(type) {
+  document.querySelectorAll(".slice").forEach(s =>
+    s.classList.remove("active")
+  );
+
+  const activeSlice = document.querySelector(`.slice.${type}`);
+  if (activeSlice) activeSlice.classList.add("active");
+}
+
+/* 
+  VALFRITT: manuellt test av färg
+  window.setType("division")
+*/
+window.setType = function(type) {
+  activeType = type;
+  showQuestion();
+};
