@@ -60,6 +60,14 @@ body {
   transform: rotateY(180deg);
 }
 
+.addition       { background:#4da6ff; }
+.subtraktion    { background:#ff99cc; }
+.multiplikation { background:#ffe066; }
+.division       { background:#c299ff; }
+.klockan        { background:#99e699; }
+.kreativ        { background:#ffb366; }
+
+
 @media (min-width: 900px) {
   .card-container {
     max-width: 600px;
