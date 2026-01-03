@@ -37,14 +37,23 @@ let selectedCategory = null;
 // När kategori väljs
 function selectCategory(cat) {
   selectedCategory = cat;
-  document.getElementById('levelSelect').style.display = 'flex';
+  const levelDiv = document.getElementById('levelSelect');
+  levelDiv.style.display = 'flex';
 
   // Uppdatera länkar för nivåval
   for (let lvl = 1; lvl <= 3; lvl++) {
-    document.getElementById('level' + lvl).href = `card.html?category=${cat}&level=${lvl}`;
+    const lvlBtn = document.getElementById('level' + lvl);
+    lvlBtn.href = `card.html?category=${cat}&level=${lvl}`;
+    
+    // Lägg till säker click
+    lvlBtn.onclick = function(e){
+      // säkerställer att länken fungerar normalt
+      window.location.href = lvlBtn.href;
+    };
   }
 }
 </script>
+
 
 </body>
 </html>
