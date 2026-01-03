@@ -1,12 +1,69 @@
 body {
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  background: radial-gradient(circle at center, #0a0a0a 0%, #1a1a1a 100%);
+  color: white;
+  overflow: hidden;
 }
 
+/* Card container */
+.card-container {
+  perspective: 1000px;
+  width: 90vw;
+  max-width: 600px;
+  height: 60vh;
+  max-height: 400px;
+}
+
+/* Card */
 .card {
-  border-radius: 20px;
-  font-size: 28px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  cursor: pointer;
 }
 
-button {
-  font-size: 24px;
+/* Card sides */
+.card .front, .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Front = fråga */
+.front {
+  color: white;
+  background: #4da6ff; /* Blå = matte, byts dynamiskt i JS */
+}
+
+/* Back = facit */
+.back {
+  color: white;
+  background: #222; /* Mystiskt mörkt */
+  transform: rotateY(180deg);
+  font-style: italic;
+}
+
+/* Flip class */
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Anpassning för stora skärmar */
+@media (min-width: 900px) {
+  .card-container {
+    max-width: 600px;
+    max-height: 400px;
+  }
 }
