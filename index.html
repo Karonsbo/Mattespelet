@@ -21,12 +21,13 @@
   </div>
 
   <!-- Nivåval, dold tills kategori väljs -->
-  <div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
-    <p class="w-100">Välj nivå:</p>
-    <button id="level1" class="btn btn-outline-primary btn-lg">Lätt</button>
-    <button id="level2" class="btn btn-outline-warning btn-lg">Medel</button>
-    <button id="level3" class="btn btn-outline-danger btn-lg">Svår</button>
-  </div>
+<div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
+  <p class="w-100">Välj nivå:</p>
+  <a id="level1" class="btn btn-outline-primary btn-lg"></a>
+  <a id="level2" class="btn btn-outline-warning btn-lg"></a>
+  <a id="level3" class="btn btn-outline-danger btn-lg"></a>
+</div>
+ 
 </div>
 
 <script>
@@ -39,11 +40,11 @@ function selectCategory(cat) {
 
   for (let lvl = 1; lvl <= 3; lvl++) {
     const lvlBtn = document.getElementById('level' + lvl);
-    lvlBtn.onclick = () => {
-      window.location.href = `card.html?category=${cat}&level=${lvl}`;
-    }
+    lvlBtn.href = `card.html?category=${cat}&level=${lvl}`;
+    lvlBtn.innerText = lvl === 1 ? 'Lätt' : lvl === 2 ? 'Medel' : 'Svår';
   }
 }
+
 </script>
 
 </body>
