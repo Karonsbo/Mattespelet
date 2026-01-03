@@ -14,20 +14,21 @@
   <p>Välj kategori:</p>
 
   <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+    <!-- Matte är aktiv -->
     <button class="btn btn-primary btn-lg" onclick="selectCategory('math')">Matte</button>
+    <!-- Andra kategorier inaktiva / grå -->
     <button class="btn btn-secondary btn-lg" disabled>Historia</button>
     <button class="btn btn-secondary btn-lg" disabled>Biologi</button>
     <button class="btn btn-secondary btn-lg" disabled>Vetenskap</button>
   </div>
 
   <!-- Nivåval, dold tills kategori väljs -->
-<div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
-  <p class="w-100">Välj nivå:</p>
-  <a id="level1" class="btn btn-outline-primary btn-lg"></a>
-  <a id="level2" class="btn btn-outline-warning btn-lg"></a>
-  <a id="level3" class="btn btn-outline-danger btn-lg"></a>
-</div>
- 
+  <div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
+    <p class="w-100">Välj nivå:</p>
+    <a id="level1" class="btn btn-outline-primary btn-lg" href="#">Lätt</a>
+    <a id="level2" class="btn btn-outline-warning btn-lg" href="#">Medel</a>
+    <a id="level3" class="btn btn-outline-danger btn-lg" href="#">Svår</a>
+  </div>
 </div>
 
 <script>
@@ -40,11 +41,15 @@ function selectCategory(cat) {
 
   for (let lvl = 1; lvl <= 3; lvl++) {
     const lvlBtn = document.getElementById('level' + lvl);
+    // Sätt korrekt href
     lvlBtn.href = `card.html?category=${cat}&level=${lvl}`;
-    lvlBtn.innerText = lvl === 1 ? 'Lätt' : lvl === 2 ? 'Medel' : 'Svår';
+    // Säkerställ navigation på alla enheter
+    lvlBtn.onclick = function(e){
+      e.preventDefault(); // förhindra # scroll
+      window.location.href = lvlBtn.href; // navigera korrekt
+    }
   }
 }
-
 </script>
 
 </body>
