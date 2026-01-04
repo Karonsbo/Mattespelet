@@ -3,38 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TP-spelet - Kort</title>
+  <title>TP-spelet – Kort</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="card-container">
-  <div class="card" onclick="flipCard()">
+
+  <!-- AKTIVT KORT -->
+  <div class="card active" id="activeCard" onclick="flipCard()">
     <div class="front">
-      <div class="pie">
-        <div class="slice addition"></div>
-        <div class="slice subtraktion"></div>
-        <div class="slice multiplikation"></div>
-        <div class="slice division"></div>
-        <div class="slice klockan"></div>
-        <div class="slice kreativ"></div>
-      </div>
-      <div class="question" id="questionText">Laddar fråga...</div>
+      <div id="questionRows"></div>
     </div>
-    <div class="back" id="answerText">
-      Facit
+    <div class="back">
+      <div id="answerRows"></div>
     </div>
   </div>
 
+  <!-- PLACEHOLDER FÖR SLUT PÅ KORT -->
+<div class="card placeholder" id="placeholderCard">
+  <div class="placeholder-text">Slut på kort</div>
+</div>
+
+
+  <!-- KNAPPAR -->
+<div class="button-row">
+  <button class="btn btn-secondary btn-lg" onclick="goBack()">Tillbaka</button>
+  <div class="flex-spacer"></div>
   <button class="btn btn-light btn-lg next-card" onclick="nextCard()">Nästa kort</button>
 </div>
 
-<script src="app.js"></script>
-<script>
-  // optional: sätt initialt activeType här, t.ex. från tärning
-  // window.setType("addition");
-</script>
 
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
