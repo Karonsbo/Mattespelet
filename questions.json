@@ -106,5 +106,15 @@
       "kreativ":        { "q": "Beskriv ett tal som är större än 100 men mindre än 150", "a": "Exempelvis 123" }
     }
 
+  ],
+  "chance": [
+    { "type": "neutral",  "text": "Slå tärningen igen" },
+    { "type": "neutral",  "text": "Flytta två steg medurs" },
+    { "type": "neutral",  "text": "Välj en medspelare som hoppar över sin tur" },
+    { "type": "positive", "text": "Du har hittat en skatt värd 5 mynt", "coins": 5 },
+    { "type": "positive", "text": "En vän hjälper dig – få 1 diamant", "diamonds": 1 },
+    { "type": "negative", "text": "Du har blivit rånad och tappar 3 mynt", "coins": -3 },
+    { "type": "negative", "text": "Förbannelse – du tappar en diamant", "diamonds": -1 }
   ]
+
 }
