@@ -73,12 +73,16 @@ html, body {
 .row-card {
   display: flex;
   align-items: center;
-  flex: 1;
-  padding: 1% 2%;
+  flex: 1 1 auto;        /* allow shrinking */
+  padding: 0.5em 1em;    /* use relative padding so text stays inside */
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.95);
   box-sizing: border-box;
+  min-height: 1.5em;      /* ensures small cards don't collapse */
+  overflow: hidden;       /* clip overflow so text doesn't spill */
+  gap: 0.5em;             /* space between triangle and text */
 }
+
 
 /* TRIANGEL – responsiv med max-storlek */
 .triangle {

@@ -76,24 +76,31 @@ fetch("questions.json")
   
 function buildDeck() {
   if (activeCategory === 'math') {
-    deck = [...fullDeckMath];                     // samma som idag (lista med kort)
-    currentCard = getRandomCard();                // din existerande funktion
+    deck = [...fullDeckMath];
+    currentCard = getRandomCard();
     renderMathCard();
   } else {
-    // För chanskort använder vi viktad slump per typ och tar från respektive lista (utan repetition)
-    deck = [ 
-      ...fullDeckChance.neutral, 
-      ...fullDeckChance.positive, 
-      ...fullDeckChance.negative 
+    deck = [
+      ...fullDeckChance.neutral,
+      ...fullDeckChance.positive,
+      ...fullDeckChance.negative
     ];
     currentCard = getRandomChanceCard();
-    renderChanceCard(currentCard, questionRows, answerRows);
+
+    if (currentCard) {
+      renderChanceCard(currentCard, questionRows, answerRows);
+    } else {
+      console.warn("Chanskort-decket är tomt!");
+      activeCard.style.display = "none";
+      document.getElementById("placeholderCard").style.display = "flex";
+    }
   }
 
   activeCard.style.display = "flex";
   document.getElementById("placeholderCard").style.display = "none";
-  activeCard.classList.remove("flipped"); // börja med framsidan
+  activeCard.classList.remove("flipped");
 }
+
 
 
 function renderMathCard() {
