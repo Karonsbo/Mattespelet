@@ -97,6 +97,13 @@ function buildDeck() {
 
 
 function renderMathCard() {
+    if (!currentCard) {
+    console.warn("Inget kort att rendera!");
+    activeCard.style.display = "none";
+    document.getElementById("placeholderCard").style.display = "flex";
+    return;
+  }
+  
   renderCard(currentCard, questionRows, answerRows); // din befintliga renderCard
   activeCard.classList.remove("chance");             // säkerställ rätt stil
 }
@@ -236,6 +243,7 @@ function renderCard(cardData, questionContainer, answerContainer) {
 
   types.forEach(type => {
     const q = cardData[type];
+    if (!q) return; // <-- hoppa över om kortet inte har den typen
 
     // Fråga
     const rowQ = document.createElement("div");
@@ -266,6 +274,7 @@ function renderCard(cardData, questionContainer, answerContainer) {
     answerContainer.appendChild(rowA);
   });
 }
+
 
 // ===============================
 // Vänd kort (X-flip)
