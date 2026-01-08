@@ -169,53 +169,52 @@ function getRandomChanceCard() {
 function toggleDeckCategory() {
   if (!activeCard) return;
 
-  // Bestäm riktning denna gång
   const outClass = slideLeftNext ? "exit-left" : "exit-right";
   const inClass  = slideLeftNext ? "enter-right" : "enter-left";
 
-  // 1) Nuvarande kort glider ut
+  // 1) Lägg på exit-animation
   activeCard.classList.add(outClass);
 
-  // Lyssna på när exit-animationen är klar
-  const onExitEnd = () => {
-    activeCard.removeEventListener('transitionend', onExitEnd);
+  // 2) Lyssna på när exit-animationen är klar
+  const onExitEnd = (e) => {
+    if (e.target !== activeCard) return;
+    activeCard.removeEventListener('animationend', onExitEnd);
 
-    // 2) Rensa utklass + flip
+    // 3) Rensa klasser & flip
     activeCard.classList.remove(outClass, "flipped");
 
-    // 3) Växla aktiv hög
+    // 4) Växla aktiv hög
     activeCategory = (activeCategory === "math") ? "chance" : "math";
 
-    // 4) Uppdatera knapptext
+    // 5) Uppdatera knapptext
     if (toggleBtn) {
-      toggleBtn.textContent = (activeCategory === "math") 
-        ? "Visa chanskort" 
-        : "Visa frågekort";
+      toggleBtn.textContent = (activeCategory === "math") ? "Visa chanskort" : "Visa frågekort";
     }
 
-    // 5) Bygg och rendera första kortet i nya högen
+    // 6) Bygg och rendera första kortet i nya högen
     buildDeck();
 
-    // 6) Force reflow för iOS/Safari så animationen triggas
-    activeCard.offsetHeight;
+    // 7) Force reflow för Safari
+    void activeCard.offsetHeight;
 
-    // 7) Lägg på in-animation
+    // 8) Lägg på enter-animation
     activeCard.classList.add(inClass);
 
-    // Ta bort klassen när animationen är klar (animationend-event)
-    const onEnterEnd = () => {
+    // 9) Ta bort enter-animation när klar
+    const onEnterEnd = (e) => {
+      if (e.target !== activeCard) return;
       activeCard.classList.remove(inClass);
       activeCard.removeEventListener('animationend', onEnterEnd);
     };
     activeCard.addEventListener('animationend', onEnterEnd);
 
-    // 8) Invertera riktning till nästa gång
+    // 10) Växla riktning nästa gång
     slideLeftNext = !slideLeftNext;
   };
 
-  // Lyssna på exit-animationens slut
-  activeCard.addEventListener('transitionend', onExitEnd);
+  activeCard.addEventListener('animationend', onExitEnd);
 }
+
 
 
 
