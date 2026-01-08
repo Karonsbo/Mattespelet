@@ -160,6 +160,8 @@ function getRandomChanceCard() {
 
 
 function toggleDeckCategory() {
+  if (!activeCard) return;
+
   // Bestäm riktning denna gång
   const outClass = slideLeftNext ? "exit-left" : "exit-right";
   const inClass  = slideLeftNext ? "enter-right" : "enter-left";
@@ -167,7 +169,10 @@ function toggleDeckCategory() {
   // 1) Nuvarande kort glider ut
   activeCard.classList.add(outClass);
 
-  setTimeout(() => {
+  // Lyssna på när exit-animationen är klar
+  const onExitEnd = () => {
+    activeCard.removeEventListener('transitionend', onExitEnd);
+
     // 2) Rensa utklass + flip
     activeCard.classList.remove(outClass, "flipped");
 
@@ -184,13 +189,25 @@ function toggleDeckCategory() {
     // 5) Bygg och rendera första kortet i nya högen
     buildDeck();
 
-    // 6) Nya kortet “slidar in” från motsatt sida
-    activeCard.classList.add(inClass);
-    setTimeout(() => activeCard.classList.remove(inClass), 600);
+    // 6) Force reflow för iOS/Safari så animationen triggas
+    activeCard.offsetHeight;
 
-    // 7) Invertera riktning till nästa gång
+    // 7) Lägg på in-animation
+    activeCard.classList.add(inClass);
+
+    // Ta bort klassen när animationen är klar (animationend-event)
+    const onEnterEnd = () => {
+      activeCard.classList.remove(inClass);
+      activeCard.removeEventListener('animationend', onEnterEnd);
+    };
+    activeCard.addEventListener('animationend', onEnterEnd);
+
+    // 8) Invertera riktning till nästa gång
     slideLeftNext = !slideLeftNext;
-  }, 600); // samma duration som CSS-transitionerna
+  };
+
+  // Lyssna på exit-animationens slut
+  activeCard.addEventListener('transitionend', onExitEnd);
 }
 
 
@@ -323,4 +340,3 @@ function shuffleDeck() {
 function goBack() {
   window.location.href = "index.html";
 }
-
