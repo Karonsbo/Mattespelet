@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8">
   <title>TP-spelet</title>
@@ -7,50 +8,61 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-dark text-white">
 
-<div class="container text-center mt-5">
-  <h1 class="mb-4">TP-spelet 🎲</h1>
-  <p>Välj kategori:</p>
+  <div class="container text-center mt-5">
+    <h1 class="mb-4">TP-spelet 🎲</h1>
+    <p>Välj kategori:</p>
 
-  <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
-    <!-- Matte är aktiv -->
-    <button class="btn btn-primary btn-lg" onclick="selectCategory('math')">Matte</button>
-    <!-- Andra kategorier inaktiva / grå -->
-    <button class="btn btn-secondary btn-lg" disabled>Historia</button>
-    <button class="btn btn-secondary btn-lg" disabled>Biologi</button>
-    <button class="btn btn-secondary btn-lg" disabled>Vetenskap</button>
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <!-- Matte är aktiv -->
+      <button class="btn btn-primary btn-lg" onclick="selectCategory('math')">Matte</button>
+      <!-- Andra kategorier inaktiva / grå -->
+      <button class="btn btn-secondary btn-lg" disabled>Historia</button>
+      <button class="btn btn-secondary btn-lg" disabled>Biologi</button>
+      <button class="btn btn-secondary btn-lg" disabled>Vetenskap</button>
+    </div>
+
+    <!-- Nivåval, dold tills kategori väljs -->
+    <div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
+      <p class="w-100">Välj nivå:</p>
+      <a id="level1" class="btn btn-outline-primary btn-lg" href="#">Lätt</a>
+      <a id="level2" class="btn btn-outline-warning btn-lg" href="#">Medel</a>
+      <a id="level3" class="btn btn-outline-danger btn-lg" href="#">Svår</a>
+    </div>
   </div>
 
-  <!-- Nivåval, dold tills kategori väljs -->
-  <div id="levelSelect" class="d-flex justify-content-center flex-wrap gap-3 mt-4" style="display:none;">
-    <p class="w-100">Välj nivå:</p>
-    <a id="level1" class="btn btn-outline-primary btn-lg" href="#">Lätt</a>
-    <a id="level2" class="btn btn-outline-warning btn-lg" href="#">Medel</a>
-    <a id="level3" class="btn btn-outline-danger btn-lg" href="#">Svår</a>
-  </div>
-</div>
+  <script>
+    let selectedCategory = null;
 
-<script>
-let selectedCategory = null;
+    function selectCategory(cat) {
+      selectedCategory = cat;
+      const levelDiv = document.getElementById('levelSelect');
+      levelDiv.style.display = 'flex';
 
-function selectCategory(cat) {
-  selectedCategory = cat;
-  const levelDiv = document.getElementById('levelSelect');
-  levelDiv.style.display = 'flex';
+      // Highlight the selected category button (optional)
+      document.querySelectorAll('.btn-lg').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.querySelector(`.btn.btn-primary`);
+      if (activeBtn) activeBtn.classList.add('active');
 
-  for (let lvl = 1; lvl <= 3; lvl++) {
-    const lvlBtn = document.getElementById('level' + lvl);
-    // Sätt korrekt href
-    lvlBtn.href = `card.html?category=${cat}&level=${lvl}`;
-    // Säkerställ navigation på alla enheter
-    lvlBtn.onclick = function(e){
-      e.preventDefault(); // förhindra # scroll
-      window.location.href = lvlBtn.href; // navigera korrekt
+      // Set up level buttons
+      for (let lvl = 1; lvl <= 3; lvl++) {
+        const lvlBtn = document.getElementById('level' + lvl);
+        lvlBtn.href = `card.html?category=${cat}&level=${lvl}`;
+        lvlBtn.onclick = function (e) {
+          e.preventDefault();
+          window.location.href = lvlBtn.href;
+        }
+      }
     }
-  }
-}
-</script>
+
+    // Preselect Math when page loads
+    window.addEventListener('DOMContentLoaded', () => {
+      selectCategory('math'); // ✅ This calls the function AFTER it’s defined
+    });
+  </script>
 
 </body>
+
 </html>

@@ -37,6 +37,7 @@ html, body {
   position: relative;
   box-sizing: border-box;
   padding: 2%;       /* padding så text/trianglar inte krockar med ramen */
+  will-change: transform;
 }
 
 /* FLIPPAD */

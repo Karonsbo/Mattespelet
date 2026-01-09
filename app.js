@@ -73,7 +73,6 @@ fetch("questions.json")
     if (toggleBtn) toggleBtn.onclick = toggleDeckCategory;
   });
 
-  
 function buildDeck() {
   if (activeCategory === 'math') {
     deck = [...fullDeckMath];
