@@ -132,6 +132,31 @@ function renderChanceCard(card, questionContainer, answerContainer) {
   `;
 }
 
+function scaleCardContent(container) {
+  const card = container.closest('.card');
+
+  // Vit yta = kortets content-area minus padding + border
+  const cardStyles = getComputedStyle(card.querySelector('.front'));
+  const paddingTop = parseFloat(cardStyles.paddingTop);
+  const paddingBottom = parseFloat(cardStyles.paddingBottom);
+  const borderTop = parseFloat(cardStyles.borderTopWidth);
+  const borderBottom = parseFloat(cardStyles.borderBottomWidth);
+
+  const availableHeight = card.clientHeight - paddingTop - paddingBottom - borderTop - borderBottom;
+
+  // Reset scale innan mätning
+  container.style.transform = "scale(1)";
+  
+  // Mät höjden på allt innehåll
+  const contentHeight = container.scrollHeight;
+
+  // Om innehållet är större än ytan, skala ned
+  if (contentHeight > availableHeight) {
+    const scale = availableHeight / contentHeight;
+    container.style.transformOrigin = "top";
+    container.style.transform = `scale(${scale})`;
+  }
+}
 
 
 function weightedPick() {
@@ -279,6 +304,8 @@ function renderCard(cardData, questionContainer, answerContainer) {
 
     answerContainer.appendChild(rowA);
   });
+
+
 }
 
 
