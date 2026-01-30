@@ -343,7 +343,7 @@ function flipCard() {
             activeCard.classList.remove('negative-flash-bg');
             activeCard.removeEventListener('animationend', handler);
           });
-        }, 200); // slight delay for flip
+        }, 100); // slight delay for flip
       }
 
       activeCard.removeEventListener('transitionend', onFlipEnd);
