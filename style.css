@@ -346,6 +346,24 @@ body {
   padding-top: 70px; /* adjust to navbar height */
 }
 
+/* Red flash for negative card */
+@keyframes negativeFlashBG {
+  0%, 100% {
+    background-color: var(--card-bg, #fff);
+    box-shadow: none;
+  }
+  33%, 66% {
+    background-color: rgba(255, 0, 0, 0.6);  /* semi-transparent red */
+    box-shadow: 0 0 40px 20px rgba(255, 0, 0, 0.5); /* big red glow */
+  }
+}
+
+.negative-flash-bg {
+  animation: negativeFlashBG 0.6s ease-in-out 3;
+}
+
+
+
 
 /* ===== RESPONSIVITET FÖR SMÅ SKÄRMAR ===== */
 @media (max-width: 768px) {

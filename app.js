@@ -132,6 +132,17 @@ function renderChanceCard(card, questionContainer, answerContainer) {
   `;
 }
 
+function launchConfetti() {
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+    colors: ['#ff0', '#0f0', '#0ff', '#f0f'],
+    shapes: ['circle', 'square']
+  });
+}
+
+
 function scaleCardContent(container) {
   const card = container.closest('.card');
 
@@ -313,7 +324,38 @@ function renderCard(cardData, questionContainer, answerContainer) {
 // Vänd kort (X-flip)
 function flipCard() {
   activeCard.classList.toggle("flipped");
+
+  if (activeCategory === "chance") {
+    const onFlipEnd = (e) => {
+      if (e.target !== activeCard || !activeCard.classList.contains("flipped")) return;
+
+      if (currentCard?.type === "positive") {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      } 
+      else if (currentCard?.type === "negative") {
+        setTimeout(() => {
+          activeCard.classList.add('negative-flash-bg');
+          activeCard.addEventListener('animationend', function handler() {
+            activeCard.classList.remove('negative-flash-bg');
+            activeCard.removeEventListener('animationend', handler);
+          });
+        }, 200); // slight delay for flip
+      }
+
+      activeCard.removeEventListener('transitionend', onFlipEnd);
+    };
+
+    activeCard.addEventListener('transitionend', onFlipEnd);
+  }
 }
+
+
+
+
 
 // ===============================
 // Nästa kort med exit-animation
