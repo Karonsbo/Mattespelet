@@ -1,0 +1,11 @@
+[
+  { "name": "Amulett", "cost": 10, "type": "in-game", "description": "Skyddar mot negativa chanskort under hela spelet", "image": "images/amulet.png" },
+  { "name": "Lyckobricka", "cost": 5, "type": "in-game", "description": "Ger 4× belöning på nästa fråga. Endast en gång per spelomgång", "image": "images/lucky-token.png" },
+  { "name": "Nyckel", "cost": 8, "type": "in-game", "description": "Låser upp diamantrutor", "image": "images/key.png" },
+  { "name": "Klistermärken", "cost": 15, "type": "out-game", "description": "Kan användas efter spelet", "image": "images/stickers.png" },
+  { "name": "Nagellack", "cost": 15, "type": "out-game", "description": "Kan användas efter spelet", "image": "images/nail-polish.png" },
+  { "name": "Bok", "cost": 15, "type": "out-game", "description": "Kan användas efter spelet", "image": "images/book.png" },
+  { "name": "Halsband", "cost": 15, "type": "out-game", "description": "Kan användas efter spelet", "image": "images/necklace.png" },
+  { "name": "Biobiljett", "cost": 15, "type": "out-game", "description": "Kan användas efter spelet", "image": "images/cinema-ticket.png" }
+
+]

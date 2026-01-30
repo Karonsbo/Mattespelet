@@ -5,6 +5,7 @@ const params = new URLSearchParams(window.location.search);
 const category = params.get("category") || "math";
 const level = parseInt(params.get("level")) || 1;
 
+let history = []; // Stores previously shown cards
 let fullDeck = [];   // Hela kortleken från JSON
 let deck = [];       // Kort kvar att visa
 let currentCard = null;
@@ -318,6 +319,11 @@ function flipCard() {
 // Nästa kort med exit-animation
 
 function nextCard() {
+  if (!currentCard) return;
+
+  // Save current card to history
+  history.push(currentCard);
+
   if (activeCategory === 'math') {
     if (deck.length === 0) {
       activeCard.style.display = "none";
@@ -326,7 +332,6 @@ function nextCard() {
       nextBtn.onclick = shuffleDeck;
       return;
     }
-    // Din befintliga exit-animation för "nästa" kort
     activeCard.classList.add("exit");
     setTimeout(() => {
       activeCard.classList.remove("exit", "flipped");
@@ -336,7 +341,6 @@ function nextCard() {
       document.getElementById("placeholderCard").style.display = "none";
     }, 600);
   } else {
-    // CHANSKORT
     if (deck.length === 0) {
       activeCard.style.display = "none";
       document.getElementById("placeholderCard").style.display = "flex";
@@ -354,6 +358,60 @@ function nextCard() {
     }, 600);
   }
 }
+
+function prevCard() {
+  if (history.length === 0) return; // nothing to go back to
+
+  // Push current card back into deck so it can be reshown
+  if (currentCard) deck.push(currentCard);
+
+  const previousCard = history.pop();
+
+  // Use the same exit animation as nextCard()
+  activeCard.classList.add("exit");
+
+  setTimeout(() => {
+    activeCard.classList.remove("exit", "flipped");
+    currentCard = previousCard;
+
+    // Render based on active category
+    if (activeCategory === 'math') {
+      renderMathCard();
+    } else {
+      renderChanceCard(currentCard, questionRows, answerRows);
+    }
+
+    activeCard.style.display = "flex";
+    document.getElementById("placeholderCard").style.display = "none";
+  }, 600);
+}
+
+function updateGameInfoLabel() {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get('category');
+  const level = params.get('level');
+
+  if (!category || !level) return;
+
+  const categoryNames = {
+    math: 'Matte',
+    history: 'Historia',
+    biology: 'Biologi',
+    science: 'Vetenskap'
+  };
+
+  const levelNames = {
+    1: 'Lätt',
+    2: 'Medel',
+    3: 'Svår'
+  };
+
+  const label = document.getElementById('gameInfo');
+  label.textContent = `${categoryNames[category] ?? category} · ${levelNames[level] ?? level}`;
+}
+
+document.addEventListener('DOMContentLoaded', updateGameInfoLabel);
+
 
 function shuffleDeck() {
   if (activeCategory === 'math') {
@@ -373,11 +431,107 @@ function shuffleDeck() {
 
   activeCard.style.display = "flex";
   document.getElementById("placeholderCard").style.display = "none";
-  nextBtn.textContent = "Nästa kort";
+  //nextBtn.textContent = "Nästa kort";
   nextBtn.onclick = nextCard;
 }
+
+// ================================
+// SPÅGUMMA MENU
+// ================================
+function showFortuneMenu() {
+  const menuDiv = document.getElementById('fortuneMenu');
+  const menuContent = document.getElementById('fortuneMenuContent');
+
+  // Clear previous content
+  menuContent.innerHTML = '';
+
+  // Load JSON
+  fetch('fortuneMenu.json')
+    .then(res => res.json())
+    .then(data => {
+      // Separate in-game and out-game items
+      const inGameItems = data.filter(item => item.type === 'in-game');
+      const outGameItems = data.filter(item => item.type === 'out-game');
+
+      // Add in-game subtitle
+      if (inGameItems.length > 0) {
+        const sub = document.createElement('h3');
+        sub.textContent = "Spelrelaterade föremål";
+        menuContent.appendChild(sub);
+
+        inGameItems.forEach(item => {
+          menuContent.appendChild(createMenuItem(item));
+        });
+      }
+
+      // Divider image
+      if (outGameItems.length > 0) {
+        const divider = document.createElement('div');
+        divider.className = 'menu-divider';
+        const dividerImg = document.createElement('img');
+        dividerImg.src = 'images/divider.png';
+        dividerImg.alt = 'divider';
+        divider.appendChild(dividerImg);
+        //menuContent.appendChild(divider);
+
+        // Subtitle
+        const sub2 = document.createElement('h3');
+        sub2.textContent = "Föremål utanför spelet";
+        menuContent.appendChild(sub2);
+
+        outGameItems.forEach(item => {
+          menuContent.appendChild(createMenuItem(item));
+        });
+      }
+
+      menuDiv.style.display = 'flex';
+    })
+    .catch(err => console.error('Error loading fortuneMenu.json:', err));
+}
+
+// Create a menu item div
+function createMenuItem(item) {
+  const row = document.createElement('div');
+  row.className = 'menu-item';
+
+  const img = document.createElement('img');
+  img.src = item.image || 'images/placeholder.png';
+  img.alt = item.name;
+  row.appendChild(img);
+
+  const info = document.createElement('div');
+  info.className = 'item-info';
+
+  const title = document.createElement('h4');
+  title.textContent = `${item.name} – ${item.cost} mynt`;
+  info.appendChild(title);
+
+  const desc = document.createElement('p');
+  desc.textContent = item.description;
+  info.appendChild(desc);
+
+  // Optionally show level if item has one
+  if (item.level) {
+    const levelInfo = document.createElement('p');
+    levelInfo.style.fontStyle = 'italic';
+    levelInfo.style.fontSize = '0.85rem';
+    levelInfo.textContent = `Gäller nivå: ${item.level}`;
+    info.appendChild(levelInfo);
+  }
+
+  row.appendChild(info);
+  return row;
+}
+
+// Close menu
+function closeFortuneMenu() {
+  document.getElementById('fortuneMenu').style.display = 'none';
+}
+
+
 
 
 function goBack() {
   window.location.href = "index.html";
 }
+
