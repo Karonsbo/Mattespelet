@@ -461,7 +461,7 @@ function shuffleDeck() {
     currentCard = getRandomCard();
     renderMathCard();
   } else {
-    // “Återställ” chanskort: kopiera arrays igen (antar att du inte vill permanent ta bort kort)
+    // Reset chance deck
     deck = [
       ...fullDeckChance.neutral,
       ...fullDeckChance.positive,
@@ -473,9 +473,12 @@ function shuffleDeck() {
 
   activeCard.style.display = "flex";
   document.getElementById("placeholderCard").style.display = "none";
-  //nextBtn.textContent = "Nästa kort";
+
+  // ✅ Reset the next button text and handler
+  nextBtn.innerHTML = '<i class="fas fa-arrow-right"></i>'; 
   nextBtn.onclick = nextCard;
 }
+
 
 // ================================
 // SPÅGUMMA MENU
