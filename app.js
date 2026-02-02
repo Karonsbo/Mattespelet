@@ -38,10 +38,10 @@ const swooshSound = new Audio('sounds/swoosh.mp3');
 swooshSound.volume = 0.2;
 
 const failSound = new Audio('sounds/fail.mp3');
-failSound.volume = 0.3;
+failSound.volume = 0.2;
 
 const successSound = new Audio('sounds/success.mp3');
-successSound.volume = 0.2;
+successSound.volume = 0.1;
 
 // DOM-element
 const activeCard = document.getElementById("activeCard");
