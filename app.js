@@ -534,28 +534,32 @@ function showFortuneMenu() {
     .catch(err => console.error('Error loading fortuneMenu.json:', err));
 }
 
-// Create a menu item div
 function createMenuItem(item) {
   const row = document.createElement('div');
   row.className = 'menu-item';
+  row.style.position = 'relative'; // needed for top-right badge
 
+  // Item image
   const img = document.createElement('img');
   img.src = item.image || 'images/placeholder.png';
   img.alt = item.name;
   row.appendChild(img);
 
+  // Info container
   const info = document.createElement('div');
   info.className = 'item-info';
 
+  // Title
   const title = document.createElement('h4');
-  title.textContent = `${item.name} – ${item.cost} mynt`;
+  title.textContent = item.name;
   info.appendChild(title);
 
+  // Description
   const desc = document.createElement('p');
   desc.textContent = item.description;
   info.appendChild(desc);
 
-  // Optionally show level if item has one
+  // Optional level
   if (item.level) {
     const levelInfo = document.createElement('p');
     levelInfo.style.fontStyle = 'italic';
@@ -565,8 +569,36 @@ function createMenuItem(item) {
   }
 
   row.appendChild(info);
+
+  // Cost badge (top-right)
+  const coins = item.cost?.coins ?? 0;
+  const diamonds = item.cost?.diamonds ?? 0;
+
+  if (coins > 0 || diamonds > 0) {
+    const costBadge = document.createElement('div');
+    costBadge.className = 'cost-badge';
+
+    if (coins > 0) {
+      const coinSpan = document.createElement('span');
+      coinSpan.innerHTML = `<img src="images/coin.png" alt="coin" class="cost-icon">×${coins}`;
+      costBadge.appendChild(coinSpan);
+    }
+
+    if (diamonds > 0) {
+      const diamondSpan = document.createElement('span');
+      diamondSpan.innerHTML = `<img src="images/gem.png" alt="diamond" class="cost-icon">×${diamonds}`;
+      costBadge.appendChild(diamondSpan);
+    }
+
+    row.appendChild(costBadge);
+  }
+
   return row;
 }
+
+
+
+
 
 // Close menu
 function closeFortuneMenu() {
