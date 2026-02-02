@@ -27,7 +27,21 @@ let slideLeftNext = true;
 // Toggle-knappen
 const toggleBtn = document.querySelector('.toggle-deck');
 
+// Hämta ljud
+const nextCardSound = new Audio('sounds/next-card.mp3');
+nextCardSound.volume = 0.2;
 
+const flipCardSound = new Audio('sounds/flip-card.mp3');
+flipCardSound.volume = 0.2;
+
+const swooshSound = new Audio('sounds/swoosh.mp3');
+swooshSound.volume = 0.2;
+
+const failSound = new Audio('sounds/fail.mp3');
+failSound.volume = 0.3;
+
+const successSound = new Audio('sounds/success.mp3');
+successSound.volume = 0.2;
 
 // DOM-element
 const activeCard = document.getElementById("activeCard");
@@ -215,6 +229,10 @@ function toggleDeckCategory() {
   const outClass = slideLeftNext ? "exit-left" : "exit-right";
   const inClass  = slideLeftNext ? "enter-right" : "enter-left";
 
+  // Play sound
+  swooshSound.currentTime = 0; // rewind to start
+  swooshSound.play().catch(e => console.warn("Sound play failed:", e));
+
   // 1) Lägg på exit-animation
   activeCard.classList.add(outClass);
 
@@ -325,6 +343,10 @@ function renderCard(cardData, questionContainer, answerContainer) {
 function flipCard() {
   activeCard.classList.toggle("flipped");
 
+  // Play sound
+  flipCardSound.currentTime = 0; // rewind to start
+  flipCardSound.play().catch(e => console.warn("Sound play failed:", e));
+
   if (activeCategory === "chance") {
     const onFlipEnd = (e) => {
       if (e.target !== activeCard || !activeCard.classList.contains("flipped")) return;
@@ -335,6 +357,10 @@ function flipCard() {
           spread: 70,
           origin: { y: 0.6 }
         });
+        // Play sound
+        successSound.currentTime = 0; // rewind to start
+        successSound.play().catch(e => console.warn("Sound play failed:", e));
+
       } 
       else if (currentCard?.type === "negative") {
         setTimeout(() => {
@@ -344,6 +370,10 @@ function flipCard() {
             activeCard.removeEventListener('animationend', handler);
           });
         }, 100); // slight delay for flip
+
+        // Play sound
+        failSound.currentTime = 0; // rewind to start
+        failSound.play().catch(e => console.warn("Sound play failed:", e));
       }
 
       activeCard.removeEventListener('transitionend', onFlipEnd);
@@ -362,6 +392,10 @@ function flipCard() {
 
 function nextCard() {
   if (!currentCard) return;
+
+  // Play sound
+  nextCardSound.currentTime = 0; // rewind to start
+  nextCardSound.play().catch(e => console.warn("Sound play failed:", e));
 
   // Save current card to history
   history.push(currentCard);
