@@ -537,7 +537,7 @@ function showFortuneMenu() {
 function createMenuItem(item) {
   const row = document.createElement('div');
   row.className = 'menu-item';
-  row.style.position = 'relative'; // needed for top-right badge
+  row.style.position = 'relative';
 
   // Item image
   const img = document.createElement('img');
@@ -549,17 +549,14 @@ function createMenuItem(item) {
   const info = document.createElement('div');
   info.className = 'item-info';
 
-  // Title
   const title = document.createElement('h4');
   title.textContent = item.name;
   info.appendChild(title);
 
-  // Description
   const desc = document.createElement('p');
   desc.textContent = item.description;
   info.appendChild(desc);
 
-  // Optional level
   if (item.level) {
     const levelInfo = document.createElement('p');
     levelInfo.style.fontStyle = 'italic';
@@ -570,7 +567,7 @@ function createMenuItem(item) {
 
   row.appendChild(info);
 
-  // Cost badge (top-right)
+  // Cost badge
   const coins = item.cost?.coins ?? 0;
   const diamonds = item.cost?.diamonds ?? 0;
 
@@ -578,19 +575,15 @@ function createMenuItem(item) {
     const costBadge = document.createElement('div');
     costBadge.className = 'cost-badge';
 
-    const createCostSpan = (src, amount) => {
+    const createCostItem = (src, amount) => {
       const span = document.createElement('span');
       span.className = 'cost-item';
-      span.innerHTML = `<img src="${src}" class="cost-icon">×<span class="cost-number">${amount}</span>`;
+      span.innerHTML = `<img src="${src}" class="cost-icon"><span class="cost-number">×${amount}</span>`;
       return span;
     };
 
-    if (coins > 0) {
-      costBadge.appendChild(createCostSpan('images/coin.png', coins));
-    }
-    if (diamonds > 0) {
-      costBadge.appendChild(createCostSpan('images/gem.png', diamonds));
-    }
+    if (coins > 0) costBadge.appendChild(createCostItem('images/coin.png', coins));
+    if (diamonds > 0) costBadge.appendChild(createCostItem('images/gem.png', diamonds));
 
     row.appendChild(costBadge);
   }

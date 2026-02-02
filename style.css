@@ -362,14 +362,6 @@ body {
   animation: negativeFlashBG 0.6s ease-in-out 3;
 }
 
-.item-cost {
-  display: flex;
-  gap: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 4px 0 6px;
-}
-
 .cost-badge {
   position: absolute;
   top: 8px;
@@ -379,37 +371,35 @@ body {
   border-radius: 14px;
   font-weight: bold;
   display: flex;
-  flex-direction: column; /* vertical stack */
-  align-items: flex-end;
+  flex-direction: column; /* stack coin + gem vertically */
+  align-items: flex-start; /* left-align icons and × */
   font-size: 1.1rem;
   z-index: 10;
-  line-height: 1; /* align numbers neatly */
+  line-height: 1;
 }
 
 .cost-badge .cost-item {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* right-align numbers */
-  gap: 2px;
-  min-width: 50px; /* ensures icons take equal space */
+  gap: 4px;
 }
 
 .cost-badge .cost-icon {
   width: 20px;
   height: 20px;
-  flex-shrink: 0; /* keep icon size consistent */
+  flex-shrink: 0;
 }
 
 .cost-badge .cost-number {
   display: inline-block;
-  width: auto; /* number width varies but aligned by flex-end */
+  min-width: 20px; /* ensures "×" align horizontally */
 }
 
-/* Make sure item text wraps naturally */
 .menu-item .item-info {
-  margin-right: 70px; /* leave space for top-right badge */
+  margin-right: 90px; /* enough space so text doesn't overlap badge */
   word-wrap: break-word;
 }
+
 
 
 
