@@ -439,12 +439,16 @@ function nextCard() {
 function prevCard() {
   if (history.length === 0) return; // nothing to go back to
 
+  // Play sound immediately
+  nextCardSound.currentTime = 0; // rewind to start
+  nextCardSound.play().catch(e => console.warn("Sound play failed:", e));
+
   // Push current card back into deck so it can be reshown
   if (currentCard) deck.push(currentCard);
 
   const previousCard = history.pop();
 
-  // Use the same exit animation as nextCard()
+  // Use the same exit animation as nextCard
   activeCard.classList.add("exit");
 
   setTimeout(() => {
@@ -462,6 +466,7 @@ function prevCard() {
     document.getElementById("placeholderCard").style.display = "none";
   }, 600);
 }
+
 
 function updateGameInfoLabel() {
   const params = new URLSearchParams(window.location.search);
