@@ -578,16 +578,18 @@ function createMenuItem(item) {
     const costBadge = document.createElement('div');
     costBadge.className = 'cost-badge';
 
-    if (coins > 0) {
-      const coinSpan = document.createElement('span');
-      coinSpan.innerHTML = `<img src="images/coin.png" alt="coin" class="cost-icon">×${coins}`;
-      costBadge.appendChild(coinSpan);
-    }
+    const createCostSpan = (src, amount) => {
+      const span = document.createElement('span');
+      span.className = 'cost-item';
+      span.innerHTML = `<img src="${src}" class="cost-icon">×<span class="cost-number">${amount}</span>`;
+      return span;
+    };
 
+    if (coins > 0) {
+      costBadge.appendChild(createCostSpan('images/coin.png', coins));
+    }
     if (diamonds > 0) {
-      const diamondSpan = document.createElement('span');
-      diamondSpan.innerHTML = `<img src="images/gem.png" alt="diamond" class="cost-icon">×${diamonds}`;
-      costBadge.appendChild(diamondSpan);
+      costBadge.appendChild(createCostSpan('images/gem.png', diamonds));
     }
 
     row.appendChild(costBadge);

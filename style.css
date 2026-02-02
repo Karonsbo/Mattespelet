@@ -379,24 +379,38 @@ body {
   border-radius: 14px;
   font-weight: bold;
   display: flex;
-  flex-direction: column; /* stack coins and diamonds vertically */
+  flex-direction: column; /* vertical stack */
   align-items: flex-end;
-  font-size: 1.1rem; /* larger text */
+  font-size: 1.1rem;
   z-index: 10;
+  line-height: 1; /* align numbers neatly */
 }
 
-.cost-badge span {
+.cost-badge .cost-item {
   display: flex;
   align-items: center;
-  gap: 2px; /* very small gap between icon and number */
+  justify-content: flex-end; /* right-align numbers */
+  gap: 2px;
+  min-width: 50px; /* ensures icons take equal space */
 }
 
 .cost-badge .cost-icon {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
-  margin: 0; /* remove any extra margin */
+  flex-shrink: 0; /* keep icon size consistent */
 }
+
+.cost-badge .cost-number {
+  display: inline-block;
+  width: auto; /* number width varies but aligned by flex-end */
+}
+
+/* Make sure item text wraps naturally */
+.menu-item .item-info {
+  margin-right: 70px; /* leave space for top-right badge */
+  word-wrap: break-word;
+}
+
 
 
 
