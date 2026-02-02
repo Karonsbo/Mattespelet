@@ -399,7 +399,7 @@ body {
 
 /* Make item-info column wider */
 .menu-item .item-info {
-  margin-right: 70px;          /* space for slimmer cost badge */
+  margin-right: 60px;          /* space for slimmer cost badge */
   word-wrap: break-word;
 }
 
