@@ -393,47 +393,48 @@ function flipCard() {
 function nextCard() {
   if (!currentCard) return;
 
-  // Play sound
-  nextCardSound.currentTime = 0; // rewind to start
+  // Play sound first
+  nextCardSound.currentTime = 0;
   nextCardSound.play().catch(e => console.warn("Sound play failed:", e));
 
-  // Save current card to history
+  // Save history
   history.push(currentCard);
 
-  if (activeCategory === 'math') {
-    if (deck.length === 0) {
-      activeCard.style.display = "none";
-      document.getElementById("placeholderCard").style.display = "flex";
-      nextBtn.textContent = "Blanda om";
-      nextBtn.onclick = shuffleDeck;
-      return;
-    }
+  // Force next frame before adding animation
+  requestAnimationFrame(() => {
     activeCard.classList.add("exit");
+
     setTimeout(() => {
       activeCard.classList.remove("exit", "flipped");
-      currentCard = getRandomCard();
-      renderMathCard();
+
+      if (activeCategory === 'math') {
+        if (deck.length === 0) {
+          activeCard.style.display = "none";
+          document.getElementById("placeholderCard").style.display = "flex";
+          nextBtn.textContent = "Blanda om";
+          nextBtn.onclick = shuffleDeck;
+          return;
+        }
+        currentCard = getRandomCard();
+        renderMathCard();
+      } else {
+        if (deck.length === 0) {
+          activeCard.style.display = "none";
+          document.getElementById("placeholderCard").style.display = "flex";
+          nextBtn.textContent = "Blanda om";
+          nextBtn.onclick = shuffleDeck;
+          return;
+        }
+        currentCard = getRandomChanceCard();
+        renderChanceCard(currentCard, questionRows, answerRows);
+      }
+
       activeCard.style.display = "flex";
       document.getElementById("placeholderCard").style.display = "none";
     }, 600);
-  } else {
-    if (deck.length === 0) {
-      activeCard.style.display = "none";
-      document.getElementById("placeholderCard").style.display = "flex";
-      nextBtn.textContent = "Blanda om";
-      nextBtn.onclick = shuffleDeck;
-      return;
-    }
-    activeCard.classList.add("exit");
-    setTimeout(() => {
-      activeCard.classList.remove("exit", "flipped");
-      currentCard = getRandomChanceCard();
-      renderChanceCard(currentCard, questionRows, answerRows);
-      activeCard.style.display = "flex";
-      document.getElementById("placeholderCard").style.display = "none";
-    }, 600);
-  }
+  });
 }
+
 
 function prevCard() {
   if (history.length === 0) return; // nothing to go back to
