@@ -11,8 +11,8 @@
         "a": "24"
       },
       "multiplikation": {
-        "q": "Skriv hela 1:ans tabell (1–10)",
-        "a": "1×1=1, 1×2=2, 1×3=3, 1×4=4, 1×5=5, 1×6=6, 1×7=7, 1×8=8, 1×9=9, 1×10=10"
+        "q": "7 × 8 = ?",
+        "a": "56"
       },
       "division": {
         "q": "30 ÷ 5 = ?",
@@ -328,7 +328,7 @@
       },
       "kreativ": {
         "q": "Rita en figur som har exakt 4 hörn",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
 
@@ -439,7 +439,7 @@
       },
       "kreativ": {
         "q": "Rita två olika sätt att visa talet 10 med bilder",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -466,7 +466,7 @@
       },
       "kreativ": {
         "q": "Rita ett symmetriskt mönster",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -520,7 +520,7 @@
       },
       "kreativ": {
         "q": "Rita två olika sätt att visa talet 10 med bilder",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -547,7 +547,7 @@
       },
       "kreativ": {
         "q": "Rita ett symmetriskt mönster",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -601,7 +601,7 @@
       },
       "kreativ": {
         "q": "Rita en form och dela den i fyra lika delar",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -655,7 +655,7 @@
       },
       "kreativ": {
         "q": "Rita ett mönster med tre olika former",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -709,7 +709,7 @@
       },
       "kreativ": {
         "q": "Rita ett stapeldiagram över hur många frukter du åt igår (skatta)",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -736,7 +736,7 @@
       },
       "kreativ": {
         "q": "Rita ett upprepat mönster som går A-B-A-B",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -790,7 +790,7 @@
       },
       "kreativ": {
         "q": "Rita tre figurer som tillsammans bildar talet 12",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1006,7 +1006,7 @@
       },
       "kreativ": {
         "q": "Rita ett symmetriskt mönster",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1033,7 +1033,7 @@
       },
       "kreativ": {
         "q": "Rita en figur som har exakt 4 hörn",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1168,7 +1168,7 @@
       },
       "kreativ": {
         "q": "Rita ett mönster med tre olika former",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1195,7 +1195,7 @@
       },
       "kreativ": {
         "q": "Rita ett rutnät 3×3 och fyll varje ruta med en siffra",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1249,7 +1249,7 @@
       },
       "kreativ": {
         "q": "Rita en tallinje från 0 till 20",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1303,7 +1303,7 @@
       },
       "kreativ": {
         "q": "Rita två olika sätt att visa talet 10 med bilder",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1330,7 +1330,7 @@
       },
       "kreativ": {
         "q": "Rita ett symmetriskt mönster",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1357,7 +1357,7 @@
       },
       "kreativ": {
         "q": "Rita ett mönster som upprepas tre gånger",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1978,7 +1978,7 @@
       },
       "kreativ": {
         "q": "Rita ett mönster A-A-B-B-A",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2032,7 +2032,7 @@
       },
       "kreativ": {
         "q": "Rita en figur med sex hörn",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2086,7 +2086,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och dela den i fyra lika delar",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2194,7 +2194,7 @@
       },
       "kreativ": {
         "q": "Rita en polygon med fem sidor",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2410,7 +2410,7 @@
       },
       "kreativ": {
         "q": "Rita tre figurer som tillsammans bildar talet 15",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2464,7 +2464,7 @@
       },
       "kreativ": {
         "q": "Rita ett rutnät 3×3 och fyll med tal 1–9",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2518,7 +2518,7 @@
       },
       "kreativ": {
         "q": "Rita en kvadrat och dela den i fyra lika delar",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2626,7 +2626,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och markera diameter",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2788,7 +2788,7 @@
       },
       "kreativ": {
         "q": "Rita två sätt att visa talet 20 med bilder",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2842,7 +2842,7 @@
       },
       "kreativ": {
         "q": "Rita ett upprepat mönster B-A-A-B",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -2950,7 +2950,7 @@
       },
       "kreativ": {
         "q": "Rita en sexhörning och markera en sida",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -3517,7 +3517,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och markera en radie",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4057,7 +4057,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och tre strålar ut från mitten",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4111,7 +4111,7 @@
       },
       "kreativ": {
         "q": "Rita en kvadrat och tre diagonaler",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4273,7 +4273,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och två diagonaler i en kvadrat",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4327,7 +4327,7 @@
       },
       "kreativ": {
         "q": "Rita en kvadrat och markera en diagonal",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4435,7 +4435,7 @@
       },
       "kreativ": {
         "q": "Rita tre former som tillsammans visar talet 18",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4705,7 +4705,7 @@
       },
       "kreativ": {
         "q": "Rita två olika figurer som båda har 4 hörn",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -4813,7 +4813,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och markera diameter",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -5299,7 +5299,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och två parallella linjer",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -5407,7 +5407,7 @@
       },
       "kreativ": {
         "q": "Rita en cirkel och tre linjer genom centrum",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -5569,7 +5569,7 @@
       },
       "kreativ": {
         "q": "Rita ett rutnät med 4×4 rutor",
-        "a": "fråga någon som vet om det stämmer"
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -5603,431 +5603,432 @@
   "chance": [
     {
       "type": "neutral",
-      "text": "Slå tärningen igen – runorna skimrar"
+      "text": "Slå tärningen igen. Om du slår ett udda tal går du 2 steg – annars 1 steg."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: om du slår jämnt går du 2 steg – annars 1 steg – blå dimma"
+      "text": "Slå tärningen igen. Om du slår ett jämnt tal går du 2 steg – annars 1 steg."
     },
     {
       "type": "neutral",
-      "text": "Runorna viskar: ta en extratur – stjärnfall"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Mystisk vind: stå över hinder – silverljus"
+      "text": "Byt plats med närmsta spelare."
     },
     {
       "type": "neutral",
-      "text": "Illusion: byt plats med närmaste spelare framför – kristallbris"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Dimslöja: alla rullar om tärningen – månskimmer"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 6, hoppa över nästa hinder – jordvibration"
+      "text": "Slå tärningen igen. Gå sedan lika många steg moturs."
     },
     {
       "type": "neutral",
-      "text": "Portalen skiftar: flytta till närmsta hörnruta – gnistregn"
+      "text": "Slå tärningen igen. Gå sedan lika många steg medurs."
     },
     {
       "type": "neutral",
-      "text": "Eko i grottan: rulla tärningen om ordningen – stenklang"
+      "text": "Slå tärningen 4 gånger och summera siffrorna. Gå sedan lika många steg."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 1–2 gå bakåt 1 steg – annars stå kvar – vindfladder"
+      "text": "Slå tärningen igen."
     },
 
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 4–6 gå fram 2 steg – annars 1 – solglimt"
+      "text": "Slå tärningen igen. vid 4–6 gå 2 steg – annars 1."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: om du slår 1, ta omväg – annars inget händer – dimmspiral"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Eldgnista: du får slå igen – elddans"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Skymningssus: turordningen vänds – skuggsteg"
+      "text": "Slå tärningen igen. Gå antelet steg men hoppa över varannan ruta."
     },
     {
       "type": "neutral",
-      "text": "Trollsång: stå över nästa valfri ruta – sångvåg"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Månklang: slå två tärningar och välj den du vill – nattljud"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 3 eller 4, stå still – ångvirvel"
+      "text": "Slå tärningen igen eller gå till spågumman."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 5 eller 6, gå till närmaste specialruta – kristallsurr"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Portalblink: gå till valfri ruta inom 3 steg – ljusspår"
+      "text": "Gå till valfri chansruta."
     },
     {
       "type": "neutral",
-      "text": "Magisk puls: misslyckas slaget går du ändå 1 steg – hjärtslag"
+      "text": "Gå till närmsta rosa ruta."
     },
 
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid ojämnt resultat, hoppa över ett hinder – stenstuds"
+      "text": "Gå till närmaste oranga ruta."
     },
     {
       "type": "neutral",
-      "text": "Illusionsstick: byt riktning denna runda – virvelskugga"
+      "text": "Gå till närmaste gröna ruta."
     },
     {
       "type": "neutral",
-      "text": "Frostflamma: rulla om ett av dina tärningsslag – frostljus"
+      "text": "Gå till närmaste blå ruta."
     },
     {
       "type": "neutral",
-      "text": "Runeklirr: stanna kvar och kasta tärningen igen – runestöt"
+      "text": "Gå till närmaste gula ruta."
     },
     {
       "type": "neutral",
-      "text": "Skogsvind: gå till närmaste mellanfält – vindpust"
+      "text": "Gå till närmsta lila ruta."
     },
     {
       "type": "neutral",
-      "text": "Eldsprak: slå igen om resultatet blev 1 – flamsteg"
+      "text": "Slå tärnigen igen. Om resultatet blev 1, slå igen, annars gå lika många steg."
     },
     {
       "type": "neutral",
-      "text": "Sagoskimmer: välj att stå still eller gå 1 steg – skimmer"
+      "text": "Gå medurs 2 steg eller moturs 3 steg."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 2–3 gå tillbaka 1 steg – jordskalv"
+      "text": "Slå tärningen igen. Vid 2–3 gå tillbaka 1 steg."
     },
     {
       "type": "neutral",
-      "text": "Portalsus: gå framåt, men hoppa över nästa ruta – susvåg"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 6, ta en ny chansruta – portalglim"
+      "text": "Slå tärningen igen."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen två gånger och multiplicera siffrorna. Gå sedan lika många steg."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen två gånger och addera siffrorna. Gå sedan lika många steg."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen. Om siffra är mindre än 4, gå moturs 5 steg."
+    },
+    {
+      "type": "neutral",
+      "text": "Byt plats med valfri spelare."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen eller gå till spågumman."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen."
+    },
+    {
+      "type": "neutral",
+      "text": "Slå tärningen igen."
     },
 
     {
       "type": "neutral",
-      "text": "Trollmummel: alla andra slår om sina tärningar – mummel"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Nattvind: du får bestämma nästa spelare – nattpuls"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Fjäderfall: gå mjukt 1 steg utan konsekvenser – mjuksteg"
+      "text": "Slå tärningen igen. Om du får över 4 får du välja vilken ruta du vill gå till."
     },
     {
       "type": "neutral",
-      "text": "Stjärnstoft: misslyckat kast räknas som 3 – stjärnfäll"
+      "text": "Slå tärningen igen. Vid jämnt tal – gå medurs. Vid udda tal – gå moturs."
     },
     {
       "type": "neutral",
-      "text": "Förtrollad is: nästa hinder blir gratis – iskling"
+      "text": "Slå tärningen tre gånger och lägg ihop siffrorna. Gå sedan lika många steg."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid 1–2, gå bakåt 2 steg – annars inget – frostpust"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Magisk spegel: byt plats med valfri spelare – reflex"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Runhopp: du hoppar över nästa fält – hoppsteg"
+      "text": "Gå tre steg medurs och sedan 2 steg moturs."
     },
     {
       "type": "neutral",
-      "text": "Ekoport: rulla och gå dubbelt av resultatet – ekoport"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Nornornas kast: välj 1, 2 eller 3 steg – nornastig"
-    },
-
-    {
-      "type": "neutral",
-      "text": "Rulla tärningen: vid 3, stanna – vid annat gå 1 steg – månslöja"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Vindport: du byter håll på nästa rörelse – vindvrid"
+      "text": "Hoppa över nästa spelare i turordning."
     },
     {
       "type": "neutral",
-      "text": "Skymningssteg: gå till närmaste magiruta – skymfärd"
+      "text": "Slå tärningen igen. Om du slår en etta tappar du 5 mynt."
     },
     {
       "type": "neutral",
-      "text": "Rulla tärningen: vid jämnt tal, slå igen – jämnvåg"
+      "text": "Slå tärningen igen. Om du slår en sexa får du 5 mynt."
     },
     {
       "type": "neutral",
-      "text": "Sagoväktare: vänta en runda – väktarsus"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Runefall: du får en chans att slå om – fallsteg"
+      "text": "Slå tärningen igen och multiplicera med 3."
     },
     {
       "type": "neutral",
-      "text": "Eldsprång: valfri spelare går 1 steg bakåt – eldspår"
+      "text": "Slå tärningen igen och ta bort 1 steg."
     },
     {
       "type": "neutral",
-      "text": "Frostdans: gå 2 steg men stå över nästa – froststeg"
+      "text": "Slå tärningen igen och lägg på 3 steg."
     },
     {
       "type": "neutral",
-      "text": "Portalton: gör om senaste draget – tonpuls"
+      "text": "Slå tärningen igen."
     },
     {
       "type": "neutral",
-      "text": "Röksteg: gå framåt tills du möter ett hinder – rökspår"
+      "text": "Slå om tärningen och dubbla resultatet."
     },
-
-    {
-      "type": "neutral",
-      "text": "Månväv: slå två tärningar – välj den högsta – vävspår"
-    },
-    {
-      "type": "neutral",
-      "text": "Skuggknut: hoppa över nästa spelare i turordning – knutsteg"
-    },
-    {
-      "type": "neutral",
-      "text": "Vattenglans: gå till närmaste vattensymbol – glans"
-    },
-    {
-      "type": "neutral",
-      "text": "Runblink: nästa gång du slår 1 räknas det som 4 – blink"
-    },
-    {
-      "type": "neutral",
-      "text": "Trollglitter: ingen effekt – glitterstänk"
-    },
-    {
-      "type": "neutral",
-      "text": "Fågelsång: välj att stå still eller gå 2 steg – sångsteg"
-    },
-    {
-      "type": "neutral",
-      "text": "Stenro: stå kvar men få slå först nästa runda – stenro"
-    },
-    {
-      "type": "neutral",
-      "text": "Skogsand: nästa tärningsslag blir +1 – sanddunk"
-    },
-    {
-      "type": "neutral",
-      "text": "Ekoång: du går med nästa spelare samtidigt – ångpuls"
-    },
-    {
-      "type": "neutral",
-      "text": "Tidsflimmer: slå om och dubbla resultatet – flimmer"
-    },
-
     {
       "type": "positive",
-      "text": "En vänlig drake skänker dig en diamant",
+      "text": "Gå till närmsta diamantruta."
+    },
+    {
+      "type": "positive",
+      "text": "Gå till närmsta diamantruta."
+    },
+    {
+      "type": "positive",
+      "text": "En vänlig drake skänker dig en diamant.",
       "diamonds": 1
     },
 
     {
       "type": "positive",
-      "text": "Skattkista i skogen – ta mynt",
+      "text": "Skattkista i skogen – du hitta 4 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Gyllene port – få 4 mynt",
+      "text": "Gyllene port – få 4 mynt.",
       "coins": 4
     },
     {
       "type": "positive",
-      "text": "Stjärnfall över tornet – samla 2 mynt",
+      "text": "Stjärnfall – samla 3 mynt.",
       "coins": 2
     },
     {
       "type": "positive",
-      "text": "Magisk örtagård – 3 mynt",
+      "text": "Magisk örtagård – 3 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Feernas dans vid gläntan – få 1 mynt",
+      "text": "Feernas dans vid gläntan – få 1 mynt.",
       "coins": 1
     },
     {
       "type": "positive",
-      "text": "Drakfjäll i ruinen – värda 5 mynt",
+      "text": "Skatter i ruinen – värda 5 mynt.",
       "coins": 5
     },
     {
       "type": "positive",
-      "text": "Trollmarknad – sälj trolldryck +4 mynt",
+      "text": "Du uppträder på en trollmarknad och får 5 mynt",
       "coins": 4
     },
     {
       "type": "positive",
-      "text": "Lyckobrunnen – kasta sten, få 3 mynt tillbaka",
+      "text": "Lyckobrunnen – du får 3 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Ljusvarelse ger dig 2 mynt",
+      "text": "Ljusvarelse ger dig 2 mynt.",
       "coins": 2
     },
     {
       "type": "positive",
-      "text": "Sagostenar glimmar – +3 mynt",
+      "text": "Sagostenar glimmar – +3 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Elementkärna hittad – +4 mynt",
+      "text": "Guldstoft – +4 mynt.",
       "coins": 4
     },
     {
       "type": "positive",
-      "text": "Guldskimrande grotta – +2 mynt",
+      "text": "Guldskimrande grotta – +2 mynt.",
       "coins": 2
     },
     {
       "type": "positive",
-      "text": "Magisk portal belönar dig – +5 mynt",
+      "text": "Magisk portal belönar dig – +5 mynt.",
       "coins": 5
     },
     {
       "type": "positive",
-      "text": "Skogsalv tackar dig – +1 mynt",
+      "text": "Skogsalv tackar dig – +1 mynt.",
       "coins": 1
     },
     {
       "type": "positive",
-      "text": "Gläntans väktare ger +3 mynt",
+      "text": "Gläntans väktare ger +3 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Runskatten öppnas – +4 mynt",
+      "text": "Runskatten öppnas – +4 mynt.",
       "coins": 4
     },
     {
       "type": "positive",
-      "text": "Guldslända flyger förbi – +2 mynt",
+      "text": "Guldslända flyger förbi – +2 mynt.",
       "coins": 2
     },
     {
       "type": "positive",
-      "text": "Eldfågeln lämnar ett mynt – +1",
+      "text": "Eldfågeln lämnar ett mynt till dig.",
       "coins": 1
     },
     {
       "type": "positive",
-      "text": "Vattenandar tackar – +3 mynt",
+      "text": "Vattenandar tackar – +3 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Dagsljus vid porten – +2 mynt",
+      "text": "Dagsljus vid porten – +2 mynt.",
       "coins": 2
     },
     {
       "type": "positive",
-      "text": "Trolltrumma ger dig +4 mynt",
+      "text": "Trolltrumma ger dig +4 mynt.",
       "coins": 4
     },
     {
       "type": "positive",
-      "text": "Stenrunor belönar dig – +3 mynt",
+      "text": "Stenrunor belönar dig – +3 mynt.",
       "coins": 3
     },
     {
       "type": "positive",
-      "text": "Månljusblänk – du hittar +1 mynt",
+      "text": "Månljusblänk – du hittar +1 mynt.",
       "coins": 1
     },
     {
       "type": "positive",
-      "text": "Frostkristall – +2 mynt",
+      "text": "Frostkristall – +2 mynt.",
       "coins": 2
     },
     {
       "type": "positive",
-      "text": "Sagofågel ger dig +4 mynt",
+      "text": "Sagofågel ger dig +4 mynt.",
       "coins": 4
     },
 
     {
       "type": "negative",
-      "text": "En mörk förbannelse drabbar dig – du tappar en diamant",
+      "text": "En mörk förbannelse drabbar dig – du tappar en diamant.",
       "diamonds": -1
     },
 
     {
       "type": "negative",
-      "text": "Tjuv i nattens skog – du blir av med 3 mynt",
+      "text": "Tjuv i nattens skog – du blir av med 3 mynt.",
       "coins": -3
     },
     {
       "type": "negative",
-      "text": "Sandstorm blåser bort 2 mynt",
+      "text": "Sandstorm blåser bort 2 mynt.",
       "coins": -2
     },
     {
       "type": "negative",
-      "text": "Skuggvarelse stjäl 4 mynt",
+      "text": "Skuggvarelse stjäl 4 mynt.",
       "coins": -4
     },
     {
       "type": "negative",
-      "text": "Slemmigt troll kräver 1 mynt i tull",
+      "text": "Slemmigt troll kräver 1 mynt i tull.",
       "coins": -1
     },
     {
       "type": "negative",
-      "text": "Rostig port kräver betalning – 2 mynt",
+      "text": "En låst port stoppar dig – betala 2 mynt.",
       "coins": -2
     },
     {
       "type": "negative",
-      "text": "Trasig pung – 3 mynt ramlar ut",
+      "text": "Trasig påse – 3 mynt ramlar ut.",
       "coins": -3
     },
     {
       "type": "negative",
-      "text": "Förtrollad fälla – du betalar 2 mynt",
+      "text": "Förtrollad fälla – du betalar 2 mynt.",
       "coins": -2
     },
     {
       "type": "negative",
-      "text": "Falsk vän lurar dig på 1 mynt",
+      "text": "En falsk vän lurar dig på 1 mynt.",
       "coins": -1
     },
     {
       "type": "negative",
-      "text": "Otursmagnet – tappa 2 mynt",
+      "text": "Otursmagnet – du tappar 2 mynt.",
       "coins": -2
     }
   ]
