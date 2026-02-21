@@ -104,8 +104,8 @@
         "a": "35"
       },
       "kreativ": {
-        "q": "Gör 8 + 5 armhävningar",
-        "a": "13 armhävningar genomförda"
+        "q": "Gör 2 + 5 armhävningar",
+        "a": "7 armhävningar genomförda"
       }
     },
     {
@@ -438,8 +438,8 @@
         "a": "30"
       },
       "kreativ": {
-        "q": "Rita två olika sätt att visa talet 10 med bilder",
-        "a": "Fråga någon som vet om det stämmer"
+        "q": "Är alla sidor på en kvadrat lika långa?",
+        "a": "Ja"
       }
     },
     {
@@ -465,7 +465,7 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita ett symmetriskt mönster",
+        "q": "Rita en cirkel och färglägg en fjärdedel av den.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -492,7 +492,7 @@
         "a": "300"
       },
       "kreativ": {
-        "q": "Gör 7 + 6 mountain climbers",
+        "q": "Rita en cirkel och färglägg en tredjedel av den.",
         "a": "13 mountain climbers genomförda"
       }
     },
@@ -519,7 +519,7 @@
         "a": "30"
       },
       "kreativ": {
-        "q": "Rita två olika sätt att visa talet 10 med bilder",
+        "q": "Rita en cirkel och färglägg en tre fjärdedelar av den.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -546,8 +546,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita ett symmetriskt mönster",
-        "a": "Fråga någon som vet om det stämmer"
+        "q": "Rita ett djur med bara geometriska former.",
+        "a": "Vilka former använde du?"
       }
     },
     {
@@ -573,8 +573,8 @@
         "a": "300"
       },
       "kreativ": {
-        "q": "Gör 7 + 6 mountain climbers",
-        "a": "13 mountain climbers genomförda"
+        "q": "Rita en rektangel där den ena sidan är dubbelt så lång som den andra.",
+        "a": "Fråga någon som vet om det stämmer."
       }
     },
     {
@@ -596,8 +596,8 @@
         "a": "4"
       },
       "klockan": {
-        "q": "Vad är klockan 15 minuter efter 11:20?",
-        "a": "11:35"
+        "q": "Ställ klockan på 19:10.",
+        "a": "Fråga någon som vet om det stämmer"
       },
       "kreativ": {
         "q": "Rita en form och dela den i fyra lika delar",
@@ -627,8 +627,8 @@
         "a": "30"
       },
       "kreativ": {
-        "q": "Gör 8 + 5 situps",
-        "a": "13 situps genomförda"
+        "q": "Rita en rektangel som är 2 x 3 cm. Använd linjal.",
+        "a": "Fråga någon som vet om det stämmer."
       }
     },
     {
@@ -650,11 +650,11 @@
         "a": "3"
       },
       "klockan": {
-        "q": "Hur många minuter går det på 4 timmar?",
-        "a": "240"
+        "q": "Ställ klockan på halv fyra.",
+        "a": "Fråga någon som vet om det stämmer"
       },
       "kreativ": {
-        "q": "Rita ett mönster med tre olika former",
+        "q": "Hitta ett föremål med fyra hörn.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -681,8 +681,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Gör 6 + 7 hopp på stället",
-        "a": "13 hopp på stället genomförda"
+        "q": "Räkna till 30 tyst medan någon tar tid.",
+        "a": "Rätt svar inom 5 sekunder."
       }
     },
     {
@@ -704,12 +704,12 @@
         "a": "9"
       },
       "klockan": {
-        "q": "Hur många sekunder går det på 6 minuter?",
-        "a": "360"
+        "q": "Hur många sekunder går det på 3 minuter?",
+        "a": "180"
       },
       "kreativ": {
-        "q": "Rita ett stapeldiagram över hur många frukter du åt igår (skatta)",
-        "a": "Fråga någon som vet om det stämmer"
+        "q": "Ta fram en bunke och häll upp en liter. Använd decilitermått.",
+        "a": "10 deciliter."
       }
     },
     {
@@ -735,7 +735,7 @@
         "a": "16:10"
       },
       "kreativ": {
-        "q": "Rita ett upprepat mönster som går A-B-A-B",
+        "q": "Rita en triangel där alla sidor är lika långa. Använd linjal.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -762,8 +762,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Gör 6 + 7 tåhävningar",
-        "a": "13 tåhävningar genomförda"
+        "q": "Leta upp ett föremål som är ungefär 50 centimeter långt.",
+        "a": "Mät föremålet - 40-60 cm är okej."
       }
     },
     {
@@ -785,12 +785,12 @@
         "a": "9"
       },
       "klockan": {
-        "q": "Hur många minuter är det från 18:25 till 18:55?",
-        "a": "30"
+        "q": "Hur skrivs fem över 1 på natten i digital form?",
+        "a": "01:05"
       },
       "kreativ": {
-        "q": "Rita tre figurer som tillsammans bildar talet 12",
-        "a": "Fråga någon som vet om det stämmer"
+        "q": "Hur kan du mäta omkretsen på en boll?",
+        "a": "Lägg ett snöre/måttband runt bollen och mät längden."
       }
     },
     {
@@ -843,8 +843,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Hur många sidor har en hexagon?",
-        "a": "6"
+        "q": "Rita ett stapeldiagram",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -870,8 +870,8 @@
         "a": "30"
       },
       "kreativ": {
-        "q": "Rita en cirkel",
-        "a": "◯"
+        "q": "Rita ett linjediagram som visar temperatur och tid.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -897,8 +897,8 @@
         "a": "10:55"
       },
       "kreativ": {
-        "q": "Rita en kvadrat",
-        "a": "□"
+        "q": "Rita en kvadrat och mät en sida.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -951,8 +951,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita en triangel",
-        "a": "△"
+        "q": "Rita en triangel med en sida på 2 cm.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -974,12 +974,12 @@
         "a": "5"
       },
       "klockan": {
-        "q": "Hur många sekunder går det på 2 minuter?",
-        "a": "120"
+        "q": "Hur många minuter är tre kvart?",
+        "a": "45"
       },
       "kreativ": {
-        "q": "Gör 7 + 6 klappar",
-        "a": "13 klapp genomförda"
+        "q": "Gör ett cirkeldiagram av olika färger på dina kläder.",
+        "a": "Fråga någon som vet om det stämmer."
       }
     },
     {
@@ -1001,12 +1001,12 @@
         "a": "7"
       },
       "klockan": {
-        "q": "Hur många minuter är det från 11:05 till 11:50?",
-        "a": "45"
+        "q": "Hur många sekunder går det på två minuter?",
+        "a": "120"
       },
       "kreativ": {
-        "q": "Rita ett symmetriskt mönster",
-        "a": "Fråga någon som vet om det stämmer"
+        "q": "Rita två olika typer av diagram.",
+        "a": "T.ex. linjediagram, stapeldiagram och cirkeldiagram."
       }
     },
     {
@@ -1032,7 +1032,7 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita en figur som har exakt 4 hörn",
+        "q": "Rita en cirkel med tre lika stora delar.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -1055,8 +1055,8 @@
         "a": "8"
       },
       "klockan": {
-        "q": "Hur många minuter går det på 3 timmar?",
-        "a": "180"
+        "q": "Hur många minuter går det på 1 timme?",
+        "a": "60"
       },
       "kreativ": {
         "q": "Gör 8 + 5 upphopp",
@@ -1082,12 +1082,12 @@
         "a": "12"
       },
       "klockan": {
-        "q": "Vad är klockan 40 minuter före 12:30?",
-        "a": "11:50"
+        "q": "Hur många dagar har januari?",
+        "a": "31"
       },
       "kreativ": {
-        "q": "Rita en romb",
-        "a": "◇"
+        "q": "Rita ett linjediagram med två uppgångar och en nedgång.",
+        "a": "Fråga någon som vet om det stämmer."
       }
     },
     {
@@ -1140,8 +1140,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita en pentagon",
-        "a": "⬠"
+        "q": "Mät dina fötter och kolla om de är lika långa.",
+        "a": "Fråga någon som vet om du gjort rätt."
       }
     },
     {
@@ -1167,7 +1167,7 @@
         "a": "45"
       },
       "kreativ": {
-        "q": "Rita ett mönster med tre olika former",
+        "q": "Gör en tabell över hur många svarta, gröna och gula saker du ser.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -1190,11 +1190,11 @@
         "a": "8"
       },
       "klockan": {
-        "q": "Vad är klockan 22 minuter efter 07:38?",
-        "a": "08:00"
+        "q": "Visa tjugo över och tjugo i tre på klockan.",
+        "a": "Fråga någon som vet om det stämmer"
       },
       "kreativ": {
-        "q": "Rita ett rutnät 3×3 och fyll varje ruta med en siffra",
+        "q": "Hur långt är din tumnagel i millimeter? Mät med linjal.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -1217,8 +1217,8 @@
         "a": "8"
       },
       "klockan": {
-        "q": "Hur många minuter är det från 12:05 till 12:50?",
-        "a": "45"
+        "q": "Hur många dygn går det på ett år?",
+        "a": "365 (skottår = 366)."
       },
       "kreativ": {
         "q": "Gör 7 + 6 utfall",
@@ -1248,7 +1248,7 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita en tallinje från 0 till 20",
+        "q": "Hur långt är ditt ringfinger? Mät med linjal.",
         "a": "Fråga någon som vet om det stämmer"
       }
     },
@@ -1271,8 +1271,8 @@
         "a": "6"
       },
       "klockan": {
-        "q": "Hur många minuter går det på 6 timmar?",
-        "a": "360"
+        "q": "Hur många dagar har februari ett skottår?",
+        "a": "29"
       },
       "kreativ": {
         "q": "Gör 8 + 5 klappar",
@@ -1298,8 +1298,8 @@
         "a": "7"
       },
       "klockan": {
-        "q": "Hur många minuter är det från 10:15 till 10:45?",
-        "a": "30"
+        "q": "Hur många veckor består ett år av?",
+        "a": "52"
       },
       "kreativ": {
         "q": "Rita två olika sätt att visa talet 10 med bilder",
@@ -1352,8 +1352,8 @@
         "a": "9"
       },
       "klockan": {
-        "q": "Hur många sekunder är 4 minuter?",
-        "a": "240"
+        "q": "Skriv din födelsedag på två olika sätt.",
+        "a": "T.ex. 6/10 2015 eller 2015-10-06"
       },
       "kreativ": {
         "q": "Rita ett mönster som upprepas tre gånger",
@@ -1464,8 +1464,8 @@
         "a": "30"
       },
       "kreativ": {
-        "q": "Rita en hexagon",
-        "a": "⬣"
+        "q": "Rita en cirkel med diametern 2 cm. Använd linjal.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1487,12 +1487,12 @@
         "a": "5"
       },
       "klockan": {
-        "q": "Vad är klockan 19 minuter efter 15:21?",
-        "a": "15:40"
+        "q": "Ställ klockan på tjugo över fyra.",
+        "a": "Fråga någon som vet om det stämmer"
       },
       "kreativ": {
-        "q": "Rita ett parallellogram",
-        "a": "▱"
+        "q": "Rita ett hus där dörren är 3 cm lång.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1514,12 +1514,12 @@
         "a": "5"
       },
       "klockan": {
-        "q": "Ställ klockan på 08:55",
+        "q": "Ställ klockan på fem i nio.",
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Rita ett mönster som går cirkel–triangel–cirkel",
-        "a": "◯ △ ◯"
+        "q": "Rita ett hjärta som är 6 cm högt.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1541,8 +1541,8 @@
         "a": "8"
       },
       "klockan": {
-        "q": "Hur många sekunder är 8 minuter?",
-        "a": "480"
+        "q": "Hur många sekunder går det på en halv minut?",
+        "a": "30"
       },
       "kreativ": {
         "q": "Gör 10 + 5 upphopp",
@@ -1568,12 +1568,12 @@
         "a": "7"
       },
       "klockan": {
-        "q": "Hur många minuter går det på 7 timmar?",
-        "a": "420"
+        "q": "Hur skrivs kvart över två på eftermiddagen digitalt?",
+        "a": "14:15"
       },
       "kreativ": {
-        "q": "Rita en rektangel och en cirkel",
-        "a": "▭ ◯"
+        "q": "Rita ett ansikte med en mun som är 2 cm bred.",
+        "a": "Fråga någon som vet om det stämmer"
       }
     },
     {
@@ -1599,8 +1599,8 @@
         "a": "180"
       },
       "kreativ": {
-        "q": "Rita en triangel",
-        "a": "△"
+        "q": "Rita en linje som är 10 cm lång och markera mitten.",
+        "a": "Mitten är på 5 cm."
       }
     },
     {
@@ -1626,8 +1626,8 @@
         "a": "Fråga någon som vet om ditt svar stämmer"
       },
       "kreativ": {
-        "q": "Gör 11 + 9 benböj",
-        "a": "20 benböj genomförda"
+        "q": "Gör 11 + 2 benböj",
+        "a": "13 benböj genomförda"
       }
     },
     {
